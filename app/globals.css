@@ -223,3 +223,56 @@ pre {
 .active-tab {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
 }
+.subject-content h1,
+.subject-content h2,
+.subject-content h3 {
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1e293b; /* nice dark slate tone */
+}
+
+.subject-content h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.subject-content h2 {
+  font-size: 1.75rem;
+  border-left: 4px solid #2596be;
+  padding-left: 12px;
+}
+
+.subject-content h3 {
+  font-size: 1.4rem;
+  color: #2596be;
+}
+
+.subject-content p {
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+.subject-content ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+  list-style-type: disc;
+}
+
+.subject-content li {
+  margin-bottom: 0.5rem;
+}
+
+.subject-content strong {
+  color: #1e40af; /* slight blue tone for emphasis */
+}
+
+.subject-content a {
+  color: #2596be;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.subject-content a:hover {
+  color: #1e40af;
+}

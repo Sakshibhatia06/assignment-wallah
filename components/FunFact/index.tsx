@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -6,7 +7,7 @@ import { motion } from "framer-motion";
 const FunFact = () => {
   return (
     <>
-      {/* <!-- ===== Funfact Start ===== --> */}
+      {/* ===== Funfact Start ===== */}
       <section className="px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0">
         <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-linear-to-t from-[#F8F9FF] to-[#DEE7FF] py-22.5 dark:bg-blacksection dark:bg-linear-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
           {/* Background Shapes */}
@@ -47,20 +48,22 @@ const FunFact = () => {
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
+           className="animate_top mx-auto mt-10 mb-12.5 px-4 text-center md:mt-0 md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
               Empowering Students with Reliable Academic Support
             </h2>
             <p className="mx-auto text-lg text-gray-600 dark:text-gray-300 lg:w-11/12">
-              At <strong>Assignments Wallah</strong>, we’ve built trust among students worldwide 
-              by providing expert academic assistance, real-time tutoring, and plagiarism-free 
-              solutions — helping thousands achieve better grades with confidence.
+              At <strong>Assignments Wallah</strong>, we’ve built trust among
+              students worldwide by providing expert academic assistance,
+              real-time tutoring, and plagiarism-free solutions — helping
+              thousands achieve better grades with confidence.
             </p>
           </motion.div>
 
           {/* Stats Section */}
-         <div className="flex flex-nowrap justify-center gap-12 lg:gap-20 overflow-x-auto">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mt-10 lg:mt-0 px-4">
+            {/* Stat 1 */}
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: -20 },
@@ -75,9 +78,12 @@ const FunFact = () => {
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 25K+
               </h3>
-              <p className="text-lg lg:text-para2">Assignments Delivered Successfully</p>
+              <p className="text-lg lg:text-para2">
+                Assignments Delivered Successfully
+              </p>
             </motion.div>
 
+            {/* Stat 2 */}
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: -20 },
@@ -95,6 +101,7 @@ const FunFact = () => {
               <p className="text-lg lg:text-para2">Happy Students Worldwide</p>
             </motion.div>
 
+            {/* Stat 3 */}
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: -20 },
@@ -109,9 +116,12 @@ const FunFact = () => {
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 98%
               </h3>
-              <p className="text-lg lg:text-para2">Customer Satisfaction Rate</p>
+              <p className="text-lg lg:text-para2">
+                Customer Satisfaction Rate
+              </p>
             </motion.div>
 
+            {/* Stat 4 */}
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: -20 },
@@ -131,7 +141,7 @@ const FunFact = () => {
           </div>
         </div>
       </section>
-      {/* <!-- ===== Funfact End ===== --> */}
+      {/* ===== Funfact End ===== */}
     </>
   );
 };

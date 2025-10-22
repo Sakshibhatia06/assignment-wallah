@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const CTA = () => {
   return (
     <section className="bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] dark:from-transparent dark:to-transparent px-4 py-20 md:px-8 lg:py-25 xl:py-30 2xl:px-0">
-      <div className="mx-auto max-w-7xl bg-white dark:bg-blacksection rounded-lg shadow-md p-10">
+      <div className="mx-auto max-w-7xl bg-white dark:bg-blacksection rounded-lg shadow-md p-6 md:p-10">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* LEFT SIDE */}
           <motion.div
@@ -27,7 +27,8 @@ const CTA = () => {
               avail <strong>30% OFF & 150% Cashback</strong> on their first
               assignment with us. We are committed to delivering premium service
               despite an affordable price. Enter your phone number below to get
-              the coupon code. <span className="text-gray-500">(We do not spam)</span>
+              the coupon code.{" "}
+              <span className="text-gray-500">(We do not spam)</span>
             </p>
 
             <div className="mt-6">
@@ -52,36 +53,37 @@ const CTA = () => {
             viewport={{ once: true }}
             className="w-full md:w-1/2 flex flex-col justify-center"
           >
-            <h3 className="text-3xl font-extrabold text-blue-700 mb-2">
+            <h3 className="text-3xl font-extrabold text-blue-700 mb-2 text-center md:text-left">
               30% OFF & 150% Cashback
             </h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
+            <p className="text-gray-700 dark:text-gray-300 mb-4 text-center md:text-left">
               on your First order! <br />
               Type your WhatsApp number to get an exclusive code.
             </p>
 
-            <div className="flex items-center gap-2">
+            {/* ✅ Responsive Input + Button */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full">
               <input
                 type="tel"
                 placeholder="Enter Your WhatsApp No."
-                className="flex-1 rounded-full border border-gray-300 px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="flex-1 rounded-full border border-gray-300 px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 w-full"
               />
               <a
                 href="https://wa.me/917763875269?text=Looking%20for%20Academic%20Help%21%21"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition"
+                className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition text-center w-full sm:w-auto"
               >
                 Get Offer on WhatsApp
               </a>
             </div>
 
-            <div className="mt-4">
+            <div className="mt-4 text-center md:text-left">
               <a
                 href="https://wa.me/917763875269?text=Looking%20for%20Academic%20Help%21%21"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-green-600 font-semibold"
+                className="inline-flex items-center justify-center gap-2 text-green-600 font-semibold"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
