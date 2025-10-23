@@ -45,21 +45,21 @@ const featuresData: Feature[] = [
   },
   {
     id: 7,
-    icon: "/images/icon/icon-06.svg",
+    icon: "/images/icon/icon-03.svg",
     title: "Dissertation Help",
     description:
       "Expert assistance in research, writing, and editing your dissertation for high-quality results.",
   },
   {
     id: 8,
-    icon: "/images/icon/icon-06.svg",
+    icon: "/images/icon/icon-01.svg",
     title: "Milestone Help",
     description:
       "Support for project milestones including planning, execution, and reporting.",
   },
   {
     id: 9,
-    icon: "/images/icon/icon-06.svg",
+    icon: "/images/icon/icon-04.svg",
     title: "Proxy Support",
     description:
       "Reliable proxy services for secure and anonymous internet access.",
