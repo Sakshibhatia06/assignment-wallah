@@ -14,7 +14,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
       {/* Question Button */}
       <button
         onClick={() => handleFaqToggle(id)}
-        className="flex cursor-pointer items-center justify-between px-6 py-5 text-metatitle3 font-medium text-black dark:text-white lg:px-9 lg:py-7.5"
+        className="flex cursor-pointer text-left items-center justify-between px-6 py-5 text-metatitle3 font-medium text-black dark:text-white lg:px-9 lg:py-7.5"
       >
         {quest}
 
