@@ -9,13 +9,14 @@ const Integration = () => {
       <section>
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Section Title Start --> */}
-          <SectionHeader
-            headerInfo={{
-              title: `INTEGRATIONS`,
-              subtitle: `Remotely Maintain Your Data, From Anywhere, Anytime.`,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
-            }}
-          />
+         <SectionHeader
+  headerInfo={{
+    title: `OUR OFFERINGS`,
+    subtitle: `Comprehensive Assignment Help for Every Student.`,
+    description: `At Assignments Wallah, we offer expert guidance across all subjects — from writing and technical projects to online classes. Get plagiarism-free, deadline-driven, and high-quality solutions tailored to your academic needs.`,
+  }}
+/>
+
 
           {/* <!-- Section Title End --> */}
         </div>
