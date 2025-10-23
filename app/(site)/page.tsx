@@ -8,7 +8,6 @@ import Integration from "@/components/Integration";
 import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
-import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import WhatsAppButton from "@/components/Floating-Whatsapp/whatsAppButton";
 
@@ -30,7 +29,6 @@ export default function Home() {
       <CTA />
       <FAQ />
       <Contact />
-      <Blog />
       <WhatsAppButton/>
     </main>
   );
