@@ -28,23 +28,23 @@ const Header = () => {
     <header
       className={`fixed left-0 top-0 z-50 w-full py-4 transition-all duration-200 backdrop-blur-md ${
         stickyMenu
-          ? "bg-[rgba(40,40,40,0.75)] shadow-md"
-          : "bg-[rgba(40,40,40,0.6)]"
+          ? "bg-[rgba(18,18,18,0.8)] shadow-md"
+          : "bg-[rgba(19,19,19,0.8)]"
       }`}
     >
       <div className="relative mx-auto max-w-6xl flex items-center justify-between px-4 md:px-8 2xl:px-0">
-        {/* ✅ Logo smaller + consistent color */}
         <Link href="/" className="flex items-center">
-          <Image
-            src="/images/assignment-wallh-Photoroom.png"
-            alt="logo"
-            width={90}
-            height={24}
-            priority
-          />
+          <div className="relative">
+            <Image
+              src="/images/assignment-wallh-Photoroom.png"
+              alt="AssignmentsWallah logo"
+              width={95}
+              height={30}
+            />
+          </div>
         </Link>
 
-        {/* Hamburger */}
+        {/* Hamburger Button */}
         <button
           aria-label="Toggle Navigation"
           className="block xl:hidden text-3xl font-bold text-white"
@@ -59,8 +59,7 @@ const Header = () => {
             navigationOpen ? "block" : "hidden xl:block"
           }`}
         >
-          {/* ✅ Make entire mobile nav scrollable if long */}
-          <ul className="flex flex-col gap-2 max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-transparent px-4 py-4 xl:max-h-none xl:overflow-visible xl:flex-row xl:items-center xl:gap-10 xl:justify-center">
+          <ul className="flex flex-col gap-2 max-h-[80vh] text-lg overflow-y-auto scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-transparent px-4 py-4 xl:max-h-none xl:overflow-visible xl:flex-row xl:items-center xl:gap-10 xl:justify-center">
             {menuData.map((menuItem) => (
               <li key={menuItem.id} className="relative group">
                 {menuItem.submenu ? (
@@ -68,11 +67,13 @@ const Header = () => {
                     {/* Parent Menu Item */}
                     <button
                       onClick={() => toggleSubmenu(menuItem.id)}
-                      className={`flex items-center gap-2 font-bold text-white hover:text-[#2596be] transition-colors duration-200 xl:justify-center ${
+                      className={`flex items-center gap-2 font-semibold tracking-wide text-white hover:text-[#2596be] transition-colors duration-200 xl:justify-center ${
                         pathUrl === menuItem.path ? "text-[#2596be]" : ""
                       }`}
                     >
-                      {menuItem.title}
+                      <span className="flex items-center justify-center leading-none">
+                        {menuItem.title}
+                      </span>
                       <svg
                         className={`h-3 w-3 fill-current transition-transform duration-200 xl:hidden ${
                           openSubmenu === menuItem.id ? "rotate-180" : ""
@@ -83,7 +84,7 @@ const Header = () => {
                       </svg>
                     </button>
 
-                    {/* ✅ Submenu (desktop hover + mobile toggle) */}
+                    {/* Submenu */}
                     <ul
                       className={`xl:absolute xl:left-0 xl:top-14 xl:min-w-[220px] xl:bg-[rgba(40,40,40,0.95)] xl:p-3 xl:shadow-lg z-50 xl:opacity-0 xl:invisible xl:group-hover:visible xl:group-hover:opacity-100 xl:transition-all xl:duration-200 ${
                         openSubmenu === menuItem.id
@@ -97,7 +98,7 @@ const Header = () => {
                             <>
                               <button
                                 onClick={() => toggleChildMenu(subItem.id)}
-                                className="flex w-full items-center justify-between px-4 py-2 text-left text-sm font-semibold text-white hover:text-[#2596be]"
+                                className="flex w-full items-center justify-between px-4 py-2 text-left text-sm font-medium text-white hover:text-[#2596be]"
                               >
                                 {subItem.title}
                                 <svg
@@ -112,7 +113,7 @@ const Header = () => {
                                 </svg>
                               </button>
 
-                              {/* ✅ Nested Submenu (scrollable both mobile + desktop) */}
+                              {/* Nested Submenu */}
                               <ul
                                 className={`xl:absolute xl:left-52 xl:top-0 xl:min-w-[220px] max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-[#555] scrollbar-track-transparent xl:bg-[rgba(40,40,40,0.95)] xl:p-3 xl:shadow-lg xl:opacity-0 xl:invisible xl:group-hover/sub:visible xl:group-hover/sub:opacity-100 xl:transition-all xl:duration-200 ${
                                   openChildMenu === subItem.id
@@ -147,7 +148,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={menuItem.path || "#"}
-                    className={`block font-bold text-white hover:text-[#2596be] transition-colors duration-200 ${
+                    className={`block font-semibold tracking-wide text-white hover:text-[#2596be] transition-colors duration-200 ${
                       pathUrl === menuItem.path ? "text-[#2596be]" : ""
                     }`}
                   >
@@ -158,12 +159,13 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div className="hidden xl:block">
-</div>
 
+        {/* Right section (for future icons/buttons if needed) */}
+        <div className="hidden xl:block"></div>
       </div>
     </header>
   );
 };
 
 export default Header;
+
