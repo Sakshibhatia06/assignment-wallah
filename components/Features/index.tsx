@@ -14,8 +14,8 @@ const Feature = () => {
           <SectionHeader
             headerInfo={{
   title: "OUR SERVICES",
-  subtitle: "What We Offer at Assignment Wallah",
-  description: `At Assignment Wallah, we specialize in delivering reliable academic assistance for students across all disciplines. Our services include Homework Help, Essay Writing, Lab Report Help, Project Help, Exam Assistance, Dissertation Support, and Milestone Guidance. We ensure original, high-quality, and on-time submissions — empowering students to achieve academic excellence with complete peace of mind.`,
+  subtitle: "What We Offer at Assignments Wallah",
+  description: `At Assignments Wallah, we specialize in delivering reliable academic assistance for students across all disciplines. Our services include Homework Help, Essay Writing, Lab Report Help, Project Help, Exam Assistance, Dissertation Support, and Milestone Guidance. We ensure original, high-quality, and on-time submissions — empowering students to achieve academic excellence with complete peace of mind.`,
 }
 }
           />
