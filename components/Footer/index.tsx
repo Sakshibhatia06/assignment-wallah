@@ -45,7 +45,7 @@ const Footer = () => {
                   />
                 </a>
 
-                <p className="mb-10 mt-5">
+                <p className="w-[90vw] md:w-full mb-10 mt-5 ">
                Get expert assignment help services from a reliable assignment helper. Fast,
 plagiarism-free solutions to boost your grades and academic performance.
                 </p>
