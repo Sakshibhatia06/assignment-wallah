@@ -51,13 +51,13 @@ const About = () => {
               <h2 className="mb-5 text-3xl font-bold text-black dark:text-white">
                 Why Students Choose{" "}
                 <span className="relative inline-block">
-                  Assignment Wallah
+                  Assignments Wallah
                 </span>{" "}
                 for Homework Support?
               </h2>
 
               <p className="text-lg text-gray-700 dark:text-gray-300">
-                Assignment Wallah prioritizes your academic needs and ensures
+                Assignments Wallah prioritizes your academic needs and ensures
                 high-quality support that fits your budget. We work hard to
                 deliver the best-quality college homework help service at a very
                 reasonable price.
@@ -93,7 +93,7 @@ const About = () => {
               className="animate_left md:w-1/2"
             >
               <h4 className="font-medium text-2xl uppercase mb-3.5 text-black dark:text-white">
-                Assignment Wallah – Your Trusted Study Partner
+                Assignments Wallah – Your Trusted Study Partner
               </h4>
 
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
@@ -104,7 +104,7 @@ const About = () => {
               </h2>
 
               <p className="text-lg text-gray-700 dark:text-gray-300">
-                Assignment Wallah works relentlessly to provide reliable and
+                Assignments Wallah works relentlessly to provide reliable and
                 affordable homework help services. With a team of experienced
                 tutors, we ensure you get personalized academic support, quick
                 responses, and top-quality solutions that help you achieve your
