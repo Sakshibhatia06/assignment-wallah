@@ -22,7 +22,7 @@ const Testimonial = () => {
              headerInfo={{
   title: `TESTIMONIALS`,
   subtitle: `Client’s Testimonials`,
-  description: `Hear what our students and learners have to say about their experience with Assignment Wallah. From timely submissions and plagiarism-free content to expert academic guidance, our commitment to delivering high-quality, reliable assignments has helped thousands achieve better grades and academic success.`,
+  description: `Hear what our students and learners have to say about their experience with Assignments Wallah. From timely submissions and plagiarism-free content to expert academic guidance, our commitment to delivering high-quality, reliable assignments has helped thousands achieve better grades and academic success.`,
 }}
             />
           </div>
