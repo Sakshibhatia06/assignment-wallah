@@ -24,30 +24,23 @@ const Hero = () => {
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
-      {/* ---------- Background Image + Overlay ---------- */}
      <div className="absolute inset-0 -z-10">
   <img
-    src="/images/hero-bg.webp"
+    src="/images/Homework-image (2).jpg"
     alt="Hero background"
-    className="w-full h-full object-cover opacity-35"
+    className="w-full h-full object-cover opacity-75"
   />
-  <div
-    className="absolute inset-0"
-    style={{
-      background:
-        "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 100%)",
-    }}
-  ></div>
+  
 </div>
 
 
       {/* ---------- Main Content ---------- */}
-      <div className="relative z-10 mx-auto max-w-6xl px-4 md:px-8">
+      <div className="relative mx-auto max-w-6xl px-4 md:px-8 z-10">
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
           {/* ---------- LEFT CONTENT ---------- */}
           <div className="w-full lg:w-1/2">
             <h1 className="mb-3 text-3xl font-extrabold leading-snug text-[#1a1a1a] md:text-4xl mt-12 lg:text-5xl">
-              <span className="text-[#2596be]">MyAssignmentHelp</span> —{" "}
+              <span className="text-[#0c84b0]">MyAssignmentHelp</span> —{" "}
               <span className="text-[#1a1a1a]">
                 Expert Help to Do My Assignment!
               </span>
@@ -240,3 +233,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
